@@ -17,14 +17,14 @@
         <tr class="table-secondary">
           <td class="striker"><%= link_to list.description, edit_list_path(list) %></td>
           <td>
-            <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' } %></center>
           </td>
         </tr>
       <% else %>
         <tr>
         <td><%= link_to list.description, edit_list_path(list) %></td>
         <td >
-          <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' } %></center>
         </td>
       </tr>
       <% end %>
