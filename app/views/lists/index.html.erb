@@ -15,7 +15,7 @@
 
       <% if list.completed %>
         <tr class="table-secondary">
-          <td><%= list.description %></td>
+          <td class="striker"><%= list.description %></td>
           <td>
             <%= link_to 'Show', list %>
             <%= link_to 'Edit', edit_list_path(list) %>
