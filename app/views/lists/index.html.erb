@@ -2,6 +2,8 @@
 
 <h1>ToDo List</h1>
 
+<%= render 'form', list: @list %>
+
 <table class="table table-bordered border-primary">
   <thead>
     <tr>
@@ -34,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Item', new_list_path %>
+<%# <%= link_to 'New Item', new_list_path %>
