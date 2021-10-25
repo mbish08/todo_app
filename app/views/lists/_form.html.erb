@@ -11,12 +11,11 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= "What would you like to add?" %>
-    <%= form.text_field :description, class: "form-control" %>
+  <div class="d-flex">
+    <%= form.text_field :description, class: "form-control me-2" %>
   </div>
 
   <div class="actions form-group">
-    <%= form.submit "Add New Item" %>
+    <%= form.submit "Add New Item", class: "btn btn-outline-success" %>
   </div>
 <% end %>
