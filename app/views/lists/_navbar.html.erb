@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand">ToDo List Home</a>
+    <a class="navbar-brand" <%= link_to "ToDo List Home", lists_path %>> </a>
     <%= render 'form', list: @list %>
   </div>
 </nav>
